@@ -8,7 +8,7 @@
 
 body {
     background: #f0f2f5;
-font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
 }
 
 /*Header-------------------------------------------*/
@@ -17,4 +17,9 @@ header {
     background: #2d4a22;
     padding: 2rm 0;
     text-align: center;
+}
+
+#logo {
+    color: #fff;
+    font-weight: 100;
 }
