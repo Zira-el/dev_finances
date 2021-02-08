@@ -75,10 +75,27 @@ header {
 
 /*Table-------------------------------------------*/
 
-#data-table{
+#data-table {
     width: 100%;
+    border-spacing: 0 0.5rem;
 }
 
+table th {
+    background: white;
+    color: #969cb3;
+    font-weight: normal;
+    padding: 1rem;
+    text-align: left;
+}
+
+table td {
+    background: white;
+}
+
+table tbody tr td:first-child,
+table thead tr th:first-child {
+    border-radius: 0.4rem;
+}
 
 /*Footer-------------------------------------------*/
 footer {
