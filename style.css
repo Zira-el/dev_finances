@@ -7,6 +7,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 93.75%;
+}
 
 body {
     background: #f0f2f5;
@@ -30,11 +33,28 @@ body {
     margin: auto;
 }
 
+/*tittles--------------------------*/
 h2 {
     margin-top: 3.2rem;
     margin-bottom: 0.8rem;
     color: #363f5f;
     font-weight: normal;
+}
+
+/*links and buttons------------------------*/
+
+a {
+    color: #49aa26;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3dd705;
+}
+
+.button.new {
+    display: inline-block;
+    margin-bottom: .8rem;
 }
 /*Header-------------------------------------------*/
 
@@ -90,6 +110,11 @@ header {
 
 /*Table-------------------------------------------*/
 
+#transaction{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
@@ -98,7 +123,12 @@ header {
 
 table tbody tr td:first-child,
 table thead tr th:first-child {
-    border-radius: 0.4rem;
+    border-radius: .25rem 0 0 .25rem;
+}
+
+table tbody tr td:last-child,
+table thead tr th:last-child {
+    border-radius: 0 .25rem .25rem 0;
 }
 
 table thead th {
@@ -137,4 +167,19 @@ footer {
     padding: 4rem 0 2rem;
     color: var(--dark-blue);
     opacity: 0.6;
+}
+
+/*Responsive-------------------------------------------*/
+
+@media (min-width: 800px){
+    html {
+        font-size: 87.5%;
+    }
+
+    #balance {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+
+    }
 }
